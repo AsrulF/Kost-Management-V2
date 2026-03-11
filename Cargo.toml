@@ -21,8 +21,9 @@ sqlx = { version = "0.8.6", features = ["mysql", "runtime-tokio", "macros", "chr
 uuid = { version = "1.22.0", features = ["v4", "serde", "js"] }
 validator = { version = "0.20.0", features = ["derive"] }
 dotenvy = "0.15.7"
-jsonwebtoken = "10.3.0"
+jsonwebtoken = { version = "10.3.0", optional = true }
 chrono = "0.4.44"
+bcrypt = { version = "0.19.0", optional = true  }
 
 
 [features]
@@ -36,6 +37,8 @@ ssr = [
     "dep:tokio",
     "dep:leptos_axum",
     "dep:sqlx",
+    "dep:jsonwebtoken",
+    "dep:bcrypt",
     "leptos/ssr",
     "leptos_meta/ssr",
     "leptos_router/ssr",
