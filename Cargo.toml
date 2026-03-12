@@ -24,6 +24,10 @@ dotenvy = "0.15.7"
 jsonwebtoken = { version = "10.3.0", optional = true }
 chrono = "0.4.44"
 bcrypt = { version = "0.19.0", optional = true  }
+cfg-if = "1.0.4"
+axum-macros = "0.5.0"
+thiserror = "2.0.18"
+http = "1.4.0"
 
 
 [features]

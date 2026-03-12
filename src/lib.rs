@@ -1,6 +1,9 @@
 pub mod app;
 pub mod utils;
 pub mod features;
+pub mod state;
+pub mod components;
+
 
 #[cfg(feature = "hydrate")]
 #[wasm_bindgen::prelude::wasm_bindgen]

@@ -1,11 +1,4 @@
 use leptos::{ev::SubmitEvent, logging, prelude::*};
-use serde::{Serialize, Deserialize};
-
-#[derive(Clone, Debug, Serialize, Deserialize)]
-pub struct LoginRequest {
-    pub email: String,
-    pub password: String,
-}
 
 #[component]
 pub fn LoginForm() -> impl IntoView {
